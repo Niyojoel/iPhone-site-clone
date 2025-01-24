@@ -53,7 +53,7 @@ const How_It_Works = () => {
                     <div className="overflow-hidden">
                         <img src={frameImg} alt="frame" className="bg-transparent relative z-10"/>
                     </div>
-                    <div className="hiw-video z-20" onClick={handleVideoState}>
+                    <div className="hiw-video">
                         <video 
                             className="pointer-events-none" 
                             playsInline 
@@ -66,7 +66,9 @@ const How_It_Works = () => {
                         >
                             <source src={frameVideo} type="video/mp4"/>
                         </video>
-                        <button className={`absolute size-10 hover:size-11 justify-center items-center rounded-full bg-black bg-opacity-70 hover:bg-opacity-90 cursor-pointer transition-all duration-800 ${!videoPlaying ? "flex" : "hidden"}`}>
+                    </div>
+                    <div className="absolute w-[95.5%] rounded-[65px] max-lg:rounded-[40px] max-md:rounded-[30px] max-sm:rounded-[20px] bg-transparent h-[91.5%] flex justify-center items-center" onClick={handleVideoState}>
+                        <button className={`z-20 lg:size-12 size-10 hover:size-11 justify-center items-center rounded-full bg-black bg-opacity-70 hover:bg-opacity-90 cursor-pointer transition-all duration-800 ${!videoPlaying ? "flex" : "hidden"}`}>
                             <Play stroke="transparent" fill="#aaa" className="hover:fill-white"/>
                         </button>
                     </div>

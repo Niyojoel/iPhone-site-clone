@@ -155,7 +155,7 @@ canvas {
   }
 
   .hiw-video {
-    @apply absolute w-[95.7%] max-lg:h-[91.5%] h-[90.5%] rounded-[7%] overflow-hidden flex items-center justify-center
+    @apply absolute w-[95.7%] max-lg:h-[91.5%] h-[90.5%] rounded-[8%] overflow-hidden flex items-center justify-center
   }
 
   .hiw-text-container {
