@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  
+[data-theme ="dark"] {
+  --blue: #2997FF;
+  --gray: #86868b;
+  --gray-100: #94928d;
+  --gray-200: #afafaf;
+  --gray-300: #42424570;
+  --zinc: #101010;
+
+  --body-color: white;
+  --body-bgColor: black;
+  --borderColor: #3b3b3b;
+
+  --black_white: black;
+  --carousel-bg: black;
+}
+
+[data-theme ="light"] {
+  --blue: #2997FF;
+  --gray: #4d4d4d;
+  --gray-100: #474643;
+  --gray-200: #5d5d5d;
+  --gray-300: #96969870;
+  --zinc: #e7e7e7;
+
+  --body-color: black;
+  --body-bgColor: #eee;
+  --borderColor: #c7c7c7;
+
+  --black_white: white;
+  --carousel-bg: #96969870;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--body-color);
+  font-weight: lighter;
+  width: 100dvw;
+  overflow-x: hidden;
+  height: 100%;
+  background: var(--body-bgColor);
+  border-color: var(--borderColor);
+  user-select: none;
+  transition: all 800ms ease-in-out;
+}
+
+canvas {
+  touch-action: none;
+}
+
+.loader_spin {
+  animation: spin 3s ease-out infinite forwards;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.screen-max-width {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  position: relative;
+  max-width: 1120px;
+}
+
+.svg {
+  @apply stroke-[var(--gray)] hover:stroke-[var(--body-color)] transition-all duration-300;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center
+  }
+
+  .nav-height {
+    @apply h-[calc(100vh-60px)]
+  }
+
+  .btn {
+    @apply px-5 py-2 rounded-3xl bg-[var(--blue)] my-5 hover:bg-transparent border border-transparent hover:border hover:text-[var(--blue)] hover:border-[var(--blue)]
+  }
+
+  .color-container {
+    @apply flex items-center justify-center px-4 py-4 rounded-full bg-[var(--gray-300)] backdrop-blur h-[3.5rem] max-md:h-11
+  }
+
+  .size-btn-container {
+    @apply flex items-center justify-center p-1 rounded-full bg-[var(--gray-300)] backdrop-blur ml-3 gap-1 h-[3.5rem] max-md:h-11
+  }
+
+  .size-btn {
+    @apply size-11 max-md:size-9 text-sm flex justify-center items-center bg-[var(--bodyColor)] text-[var(--black_white)] rounded-full transition-all
+  }
+
+  .common-padding {
+    @apply sm:py-32 py-20 sm:px-10 px-5
+  }
+
+  .section-heading {
+    @apply text-[var(--gray)] lg:text-6xl md:text-5xl text-3xl lg:mb-0 mb-5 font-medium opacity-0 translate-y-20
+  }
+
+  .feature-text {
+    @apply text-[var(--gray)] max-w-md text-lg md:text-xl font-semibold opacity-0 translate-y-[100px]
+  }
+
+  .feature-text-container {
+    @apply w-full flex items-start justify-center flex-col md:flex-row mt-10 md:mt-16 gap-5
+  }
+
+  .feature-video {
+    @apply w-full h-full object-cover object-top max-lg:object-center scale-150 opacity-0
+  }
+
+  .feature-video-container {
+    @apply w-full flex flex-col md:flex-row items-center
+  }
+
+  .features_video_bg {
+    background: linear-gradient(to right, black, #131414);
+  }
+
+  .link {
+    @apply text-[var(--blue)] hover:underline cursor-pointer flex items-center text-xl max-lg:text-lg opacity-0 translate-y-20
+  }
+
+  .control-btn {
+    @apply ml-4 size-[3.5rem] max-md:size-11 rounded-full bg-[var(--gray-300)] backdrop-blur flex-center
+  }
+
+  .hero-title {
+    @apply text-center font-semibold text-3xl text-[var(--gray-100)] opacity-0 max-md:mb-10 max-md:text-2xl max-xs:text-xl
+  }
+
+  .hiw-title {
+    @apply text-4xl lg:text-7xl md:text-5xl font-semibold text-center
+  }
+
+  .hiw-subtitle {
+    @apply text-[var(--gray)] font-semibold text-xl md:text-2xl py-10 text-center
+  }
+
+  .hiw-video {
+    @apply absolute w-[95.7%] max-lg:h-[91.5%] h-[90.5%] rounded-[7%] overflow-hidden flex items-center justify-center
+  }
+
+  .hiw-text-container {
+    @apply flex md:flex-row flex-col justify-between items-start gap-24
+  }
+
+  .hiw-text {
+    @apply text-[var(--gray)] text-xl font-normal md:font-normal
+  }
+
+  .hiw-bigtext {
+    @apply text-[var(--bodyColor)] text-3xl md:text-5xl font-normal md:font-semibold my-2
+  }
+
+  .video-carousel_container {
+    @apply relative sm:w-[70vw] max-w-[1120px] w-[88vw] md:h-[70vh] sm:h-[50vh] h-[35vh]
+  }
+
+  .g_fadeIn {
+    @apply opacity-0 translate-y-[100px]
+  }
+}
