@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react"
 import { Features, Hero, Highlight, How_It_Works, Model, Navbar, Footer } from "./sections";
 
+import * as Sentry from '@sentry/react';
+
+
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem("Theme") !== null ? localStorage.getItem("Theme") : window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 
