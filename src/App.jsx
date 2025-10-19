@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Features, Hero, Highlight, How_It_Works, Model, Navbar, Footer } from "./sections";
 
-import * as Sentry from '@sentry/react';
+// import * as Sentry from '@sentry/react';
 
 
 const App = () => {
