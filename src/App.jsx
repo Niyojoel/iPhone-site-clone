@@ -24,15 +24,17 @@ const App = () => {
   },[theme])
 
   return (
-    <main className="bg-[var(--body-bgColor)]">
-      <Navbar toggleTheme={changeTheme} themeStyles={themeStyles} />
-      <Hero/>
-      <Highlight/>
-      <Model/>
-      <Features/>
-      <How_It_Works/>
-      <Footer/>
-    </main>
+    <div className="site_wrapper"> 
+      <main className="bg-[var(--body-bgColor)]">
+        <Navbar toggleTheme={changeTheme} themeStyles={themeStyles} />
+        <Hero/>
+        <Highlight/>
+        <Model/>
+        <Features/>
+        <How_It_Works/>
+        <Footer/>
+      </main>
+    </div>
   )
 }
 
