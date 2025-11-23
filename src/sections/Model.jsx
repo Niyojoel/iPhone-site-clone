@@ -47,7 +47,7 @@ const Model = () => {
   return (
     <section className="common-padding bg-[var(--carousel-bg)]">
         <div className="screen-max-width">
-            <h1 id="model-heading" className="section-heading">
+            <h1 id="model-heading" className="section-heading will-change-transform">
                 Take a closer look.
             </h1>
             <div className="flex flex-col items-center mt-5">

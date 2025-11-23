@@ -35,6 +35,10 @@
   --carousel-bg: #96969870;
 }
 
+html {
+  overscroll-behavior: "auto" !important;
+}
+
 *, body, html {
   margin: 0;
   padding: 0;
