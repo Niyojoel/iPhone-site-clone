@@ -1,5 +1,5 @@
 import gsap from "gsap"
-import { ScrollSmoother, ScrollTrigger } from "gsap/all"
+import {ScrollTrigger } from "gsap/all"
 
 gsap.registerPlugin(ScrollTrigger)
 

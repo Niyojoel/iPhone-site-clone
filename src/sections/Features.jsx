@@ -17,7 +17,7 @@ const Features = ()=> {
     },[])
 
     return (
-        <section className="h-full common-padding bg-[var(--zinc)] relative overflow-hidden">
+        <section className="common-padding bg-[var(--zinc)] relative">
             <div className="screen-max-width">
                 <div className="mb-12 w-full">
                     <h1 id="features-title" className="section-heading will-change-transform">

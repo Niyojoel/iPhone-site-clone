@@ -18,7 +18,7 @@ const Highlight = () => {
   },[])
 
   return (
-    <section id="highlights" className="w-full overflow-hidden h-full common-padding bg-[var(--zinc)]">
+    <section id="highlights" className="common-padding bg-[var(--zinc)]">
       <div className="screen-max-width">
         <div className="mb-12 w-full md:flex md:flex-wrap items-center justify-between">
           <h1 id="title" className="section-heading text-nowrap mr-16 max-xs:text-wrap will-change-transform">
