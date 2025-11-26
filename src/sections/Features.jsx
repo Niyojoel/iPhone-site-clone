@@ -1,5 +1,5 @@
 import { useGSAP } from "@gsap/react";
-import { animateVideoWithGsap, animateWithScrollTrigger } from "../utils/animations";
+import { animateVideoWithGsap, animateWithScrollTrigger } from "../App";
 import { explore1Img, explore2Img, exploreVideo } from "../utils";
 import { useRef } from "react";
 

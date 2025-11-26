@@ -3,7 +3,7 @@ import { hightlightsSlides } from "../constants"
 import gsap from "gsap";
 import { pauseImg, playImg, replayImg } from "../utils";
 import { useGSAP } from "@gsap/react";
-import { animateVideoWithGsap, animateWithGsap } from "../utils/animations";
+import { animateVideoWithGsap, animateWithGsap } from "../App";
 
 const VideoCarousel = () => {
     const videoRef = useRef([]);

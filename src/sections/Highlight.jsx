@@ -3,7 +3,7 @@ import gsap from "gsap"
 import { rightImg, watchImg } from "../utils"
 import {VideoCarousel} from "../components"
 import { ScrollTrigger } from "gsap/all"
-import { animateWithScrollTrigger } from "../utils/animations"
+import { animateWithScrollTrigger } from "../App"
 
 gsap.registerPlugin(ScrollTrigger)
 

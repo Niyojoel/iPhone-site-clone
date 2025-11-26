@@ -2,7 +2,7 @@ import { useGSAP } from "@gsap/react"
 import { chipImg, frameImg, frameVideo } from "../utils"
 import { useRef, useState, useEffect } from "react"
 import {PlayIcon as Play} from "lucide-react"
-import { animateWithGsap, animateWithScrollTrigger } from "../utils/animations"
+import { animateWithGsap, animateWithScrollTrigger } from "../App"
 
 const How_It_Works = () => {
     const videoRef = useRef();
